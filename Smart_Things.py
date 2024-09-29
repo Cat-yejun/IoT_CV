@@ -1,17 +1,18 @@
 # smartthings
 import requests
 from Data_Time import datetime, timedelta
+import token_Information
 
 # SmartThings API 토큰
-API_KEY = ''
+API_KEY = token_Information.API_KEY
 
 # 제어하려는 디바이스의 ID
-DEVICE_ID1 = ''
-DEVICE_ID2 = ''
+DEVICE_ID1 = token_Information.DEVICE_ID1
+DEVICE_ID2 = token_Information.DEVICE_ID2
 
 # 명령 전송을 위한 API URL
-url1 = f'https://api.smartthings.com/v1/devices/{DEVICE_ID1}/commands'
-url2 = f'https://api.smartthings.com/v1/devices/{DEVICE_ID2}/commands'
+url1 = token_Information.url1
+url2 = token_Information.url2
 
 # 현재 시간을 기준으로 ISO8601 형식의 시간을 반환하는 함수
 def get_iso8601_time():
