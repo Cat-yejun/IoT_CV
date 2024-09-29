@@ -3,11 +3,11 @@ import requests
 from Data_Time import datetime, timedelta
 
 # SmartThings API 토큰
-API_KEY = 'eb1b5c53-9f68-4df8-b668-9e774bde63e0'
+API_KEY = ''
 
 # 제어하려는 디바이스의 ID
-DEVICE_ID1 = '981d4c95-ea89-4888-a07e-b9c7230af257'
-DEVICE_ID2 = '22e93c50-759e-46ab-9854-d4efd381f22a'
+DEVICE_ID1 = ''
+DEVICE_ID2 = ''
 
 # 명령 전송을 위한 API URL
 url1 = f'https://api.smartthings.com/v1/devices/{DEVICE_ID1}/commands'
